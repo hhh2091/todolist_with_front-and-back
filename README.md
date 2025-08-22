@@ -2,6 +2,8 @@
 
 一个全栈待办事项应用，前端使用React，后端使用FastAPI。
 
+author=bsf
+
 ## 项目结构
 
 ```
@@ -10,7 +12,7 @@ todolist/
 │   ├── public/       # 静态资源
 │   └── src/          # 源代码
 │       ├── components/  # React组件
-│       └── ...       
+│       └── ...     
 └── backend/          # FastAPI后端
     ├── app/          # 应用代码
     │   ├── core/     # 核心功能
@@ -83,8 +85,8 @@ pip install -r requirements.txt
 4. 设置数据库
 
 - 创建MySQL数据库
-- 更新`.env`文件中的数据库连接信息
-- 运行`init_db.sql`脚本初始化数据库
+- 更新 `.env`文件中的数据库连接信息
+- 运行 `init_db.sql`脚本初始化数据库
 
 5. 启动服务器
 
