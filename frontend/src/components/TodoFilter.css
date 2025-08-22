@@ -1,0 +1,36 @@
+.todo-filter {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.todo-filter button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todo-filter button:hover {
+  background-color: #f0f0f0;
+}
+
+.todo-filter button.active {
+  background-color: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+  .todo-filter {
+    flex-direction: column;
+  }
+  
+  .todo-filter button {
+    width: 100%;
+  }
+}

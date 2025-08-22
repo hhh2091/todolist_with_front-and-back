@@ -1,0 +1,117 @@
+.todo-item {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item.completed {
+  background-color: #f9f9f9;
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.view-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-title {
+  flex-grow: 1;
+}
+
+.todo-category {
+  font-size: 0.8rem;
+  color: #666;
+  background-color: #eee;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-actions button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todo-actions button:hover {
+  background-color: #f0f0f0;
+}
+
+.edit-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-mode input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.edit-buttons button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-buttons button:first-child {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.edit-buttons button:last-child {
+  background-color: transparent;
+  border: 1px solid #ddd;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .view-mode {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .todo-content {
+    width: 100%;
+  }
+  
+  .todo-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
